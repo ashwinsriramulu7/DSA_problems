@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;//bitwise operations are faster than arithmetic operations, can also use the regular if(n%2 ==0)
+    cin >> n;
+    if((n&1) == 0)
+        cout << "even"<<endl;
+    else
+        cout << "odd"<<endl;
+    
+    }
