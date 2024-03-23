@@ -1,0 +1,20 @@
+#include <iostream>   
+#include <vector> 
+#include <algorithm>
+int main()
+{
+    int n;
+    std::vector<int> binary;
+    std::cin >> n;
+    while(n!=0){
+        if(n%2==0)
+            binary.push_back(0);
+        else
+            binary.push_back(1);
+        n /= 2;
+    }
+    std::reverse(binary.begin(), binary.end());
+    for(int i : binary){
+        std::cout<<i;
+    }
+}
